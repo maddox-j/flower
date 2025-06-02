@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flower main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 00:07+0000\n"
+"POT-Creation-Date: 2025-06-02 01:47+0000\n"
 "PO-Revision-Date: 2024-08-23 13:09+0000\n"
 "Last-Translator: Seulki Yun <icstuckyi@gmail.com>\n"
 "Language: ko\n"
@@ -10944,7 +10944,8 @@ msgstr "클라이언트(자체)를 반환합니다."
 #: flwr.common.record.recorddict.RecordDict
 #: flwr.common.record.recorddict.RecordDict.inflate
 #: flwr.compat.client.app.start_client
-#: flwr.compat.client.app.start_numpy_client flwr.server.app.start_server
+#: flwr.compat.client.app.start_numpy_client
+#: flwr.compat.server.app.start_server
 #: flwr.server.client_manager.ClientManager.register
 #: flwr.server.client_manager.ClientManager.unregister
 #: flwr.server.client_manager.SimpleClientManager.register
@@ -11007,7 +11008,7 @@ msgstr "서버에서 받은 (전역) 모델 파라미터와 로컬 평가 프로
 #: flwr.common.record.configrecord.ConfigRecord.inflate
 #: flwr.common.record.metricrecord.MetricRecord.inflate
 #: flwr.common.record.recorddict.RecordDict.inflate
-#: flwr.server.app.start_server
+#: flwr.compat.server.app.start_server
 #: flwr.server.client_manager.ClientManager.num_available
 #: flwr.server.client_manager.ClientManager.register
 #: flwr.server.client_manager.SimpleClientManager.num_available
@@ -11049,7 +11050,7 @@ msgstr "로컬 데이터 세트의 손실 및 평가에 사용된 로컬 데이�
 #: flwr.common.record.configrecord.ConfigRecord.inflate
 #: flwr.common.record.metricrecord.MetricRecord.inflate
 #: flwr.common.record.recorddict.RecordDict.inflate
-#: flwr.server.app.start_server
+#: flwr.compat.server.app.start_server
 #: flwr.server.client_manager.ClientManager.num_available
 #: flwr.server.client_manager.ClientManager.register
 #: flwr.server.client_manager.SimpleClientManager.num_available
@@ -11138,8 +11139,9 @@ msgstr "Bases: :py:class:`object`"
 #: flwr.common.record.recorddict.RecordDict:14
 #: flwr.common.record.recorddict.RecordSet:12
 #: flwr.compat.client.app.start_client:51
-#: flwr.compat.client.app.start_numpy_client:36 flwr.server.app.start_server:46
-#: flwr.server.grid.grid.Driver:14 flwr.server.server_app.ServerApp:4
+#: flwr.compat.client.app.start_numpy_client:36
+#: flwr.compat.server.app.start_server:46 flwr.server.grid.grid.Driver:14
+#: flwr.server.server_app.ServerApp:4
 #: flwr.server.server_app.ServerApp.lifespan:7
 #: flwr.server.server_app.ServerApp.main:4
 #: flwr.server.strategy.dp_adaptive_clipping.DifferentialPrivacyClientSideAdaptiveClipping:29
@@ -15818,7 +15820,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/ref-api/flwr.server.rst:22:<autosummary>:1
-#: flwr.server.app.start_server:1 of
+#: flwr.compat.server.app.start_server:1 of
 msgid "Start a Flower server using the gRPC transport layer."
 msgstr "gRPC transport layer를 사용하여 Flower 서버를 실행하세요."
 
@@ -16533,7 +16535,7 @@ msgid ""
 "thereof. If no instance is provided, one will be created internally."
 msgstr ""
 
-#: flwr.server.app.start_server:14
+#: flwr.compat.server.app.start_server:14
 #: flwr.server.serverapp_components.ServerAppComponents:6 of
 msgid ""
 "Currently supported values are `num_rounds` (int, default: 1) and "
@@ -16660,37 +16662,37 @@ msgstr ""
 msgid "start\\_server"
 msgstr ""
 
-#: flwr.server.app.start_server:5 of
+#: flwr.compat.server.app.start_server:5 of
 msgid ""
 "This function is deprecated since 1.13.0. Use the :code:`flower-"
 "superlink` command instead to start a SuperLink."
 msgstr ""
 
-#: flwr.server.app.start_server:8 of
+#: flwr.compat.server.app.start_server:8 of
 msgid "The IPv4 or IPv6 address of the server. Defaults to `\"[::]:8080\"`."
 msgstr ""
 
-#: flwr.server.app.start_server:10 of
+#: flwr.compat.server.app.start_server:10 of
 msgid ""
 "A server implementation, either `flwr.server.Server` or a subclass "
 "thereof. If no instance is provided, then `start_server` will create one."
 msgstr ""
 
-#: flwr.server.app.start_server:17 of
+#: flwr.compat.server.app.start_server:17 of
 msgid ""
 "An implementation of the abstract base class "
 "`flwr.server.strategy.Strategy`. If no strategy is provided, then "
 "`start_server` will use `flwr.server.strategy.FedAvg`."
 msgstr ""
 
-#: flwr.server.app.start_server:21 of
+#: flwr.compat.server.app.start_server:21 of
 msgid ""
 "An implementation of the abstract base class `flwr.server.ClientManager`."
 " If no implementation is provided, then `start_server` will use "
 "`flwr.server.client_manager.SimpleClientManager`."
 msgstr ""
 
-#: flwr.server.app.start_server:26 of
+#: flwr.compat.server.app.start_server:26 of
 msgid ""
 "The maximum length of gRPC messages that can be exchanged with the Flower"
 " clients. The default should be sufficient for most models. Users who "
@@ -16700,7 +16702,7 @@ msgid ""
 "increased limit and block larger messages."
 msgstr ""
 
-#: flwr.server.app.start_server:33 of
+#: flwr.compat.server.app.start_server:33 of
 msgid ""
 "Tuple containing root certificate, server certificate, and private key to"
 " start a secure SSL-enabled server. The tuple is expected to have three "
@@ -16708,35 +16710,35 @@ msgid ""
 "server certificate.     * server private key."
 msgstr ""
 
-#: flwr.server.app.start_server:33 of
+#: flwr.compat.server.app.start_server:33 of
 msgid ""
 "Tuple containing root certificate, server certificate, and private key to"
 " start a secure SSL-enabled server. The tuple is expected to have three "
 "bytes elements in the following order:"
 msgstr ""
 
-#: flwr.server.app.start_server:37 of
+#: flwr.compat.server.app.start_server:37 of
 msgid "CA certificate."
 msgstr ""
 
-#: flwr.server.app.start_server:38 of
+#: flwr.compat.server.app.start_server:38 of
 msgid "server certificate."
 msgstr ""
 
-#: flwr.server.app.start_server:39 of
+#: flwr.compat.server.app.start_server:39 of
 msgid "server private key."
 msgstr ""
 
-#: flwr.server.app.start_server:42 of
+#: flwr.compat.server.app.start_server:42 of
 msgid "**hist** -- Object containing training and evaluation metrics."
 msgstr ""
 
-#: flwr.server.app.start_server:47 of
+#: flwr.compat.server.app.start_server:47 of
 #, fuzzy
 msgid "Starting an insecure server::"
 msgstr "안전하지 않은 서버 연결로 gRPC 클라이언트 시작하기:"
 
-#: flwr.server.app.start_server:51 of
+#: flwr.compat.server.app.start_server:51 of
 msgid "Starting a TLS-enabled server::"
 msgstr ""
 
@@ -31217,7 +31219,7 @@ msgstr ""
 " 수도 있습니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:41
-msgid "|691cc2446f8d4904b5eefbb2e422a00d|"
+msgid "|ac83f85d7091476b9b98d121a191beb2|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:109
@@ -31234,7 +31236,7 @@ msgstr ""
 " 바둑과 같은 게임을 하는 것일 수 있습니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:53
-msgid "|959ace9236d44a84b0352fa7abce0ae5|"
+msgid "|4dbcccaad9794cb1b135eccd914cb77a|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:111
@@ -31260,7 +31262,7 @@ msgstr ""
 "부르리는 것을 듣는 스마트 스피커에서 비롯됩니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:67
-msgid "|d08d86434b0a40d0ab9e970c9d3f26a3|"
+msgid "|7c755ca3cef34bb38143155b323000a8|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:113
@@ -31278,7 +31280,7 @@ msgstr ""
 "있습니다. 하지만 여러 조직이 모두 같은 작업을 위해 데이터를 생성하는 것일 수도 있습니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:79
-msgid "|c903d4610434415c893c2896cc44d1be|"
+msgid "|50c9d25a229940a999b1c9829a3589e3|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:115
@@ -31297,7 +31299,7 @@ msgstr ""
 "서버는 데이터 센터 어딘가에 있을 수도 있고 클라우드 어딘가에 있을 수도 있습니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:91
-msgid "|a8a127b5e77e40058d92534a98a1ac67|"
+msgid "|cb7a37e0976a4de0affe493efc8c1262|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:117
@@ -31314,7 +31316,7 @@ msgstr ""
 " 우리가 기본적으로 사용해 온 머신러닝 방법입니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:103
-msgid "|d94816ae0bb948a08d9c70fc40cdfe45|"
+msgid "|5cd4727f3abf423db4cecc28d82a9a89|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:119
@@ -31337,7 +31339,7 @@ msgstr ""
 "트래픽을 분석하는 것이 있습니다. 이러한 사례에서 모든 데이터는 자연스럽게 중앙 서버에 존재합니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:138
-msgid "|0df9b0b7bd7f49428a0f16986577e640|"
+msgid "|6f3bc7a94ad848ccbfe35b30c1e38d85|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:173
@@ -31354,7 +31356,7 @@ msgstr ""
 "좋은 모델을 훈련하기에 충분하지 않을 수 있습니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:150
-msgid "|3ca2aec703e04914846468bdebbaa579|"
+msgid "|aa1bde968d554b9a8688a3d734cb8ada|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:175
@@ -31533,7 +31535,7 @@ msgstr ""
 "체크포인트에서 모델 매개변수를 초기화합니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:210
-msgid "|62c7197c979a425eae442a833817ad90|"
+msgid "|ed82bf6158fb4ab7bba67d64d8d4ff2c|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:307
@@ -31561,7 +31563,7 @@ msgstr ""
 "개의 연결 노드만 사용합니다. 그 이유는 점점 더 많은 클라이언트 노드를 선택하면 학습의 효율성이 감소하기 때문입니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:225
-msgid "|cec1ac1022eb49b6b4999a6fc0dc1692|"
+msgid "|7dba84e5976c49ca8bf79029b52cf674|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:309
@@ -31588,7 +31590,7 @@ msgstr ""
 "데이터에서 한 단계 정도로 짧거나 몇 단계(mini-batches)에 불과할 수 있습니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:240
-msgid "|ff4ad9f1c9d0454f82cd45e2237ec41f|"
+msgid "|51f6ecd203e94535bf4446db09ed3cc3|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:311
@@ -31614,7 +31616,7 @@ msgstr ""
 "보냅니다. 보내는 모델 업데이트는 전체 모델 파라미터거나 로컬 교육 중에 누적된 그레디언트(gradient)일 수 있습니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:255
-msgid "|263fa38c588a42b6b9b5bb6f1ab7e572|"
+msgid "|4348311c4281447c90bbca4f3d186e41|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:313
@@ -31664,7 +31666,7 @@ msgstr ""
 "많은 영향을 미칩니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:273
-msgid "|832fe0df0b4c44f9b7d1e170a8071363|"
+msgid "|ee06b26e44004c639bd9fd47d1d9c2ac|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:315
@@ -31784,7 +31786,7 @@ msgstr ""
 "사용자는 모든 워크로드, 머신러닝 프레임워크 및 모든 프로그래밍 언어를 통합할 수 있습니다."
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:334
-msgid "|db0ef1f7489c450e96abcfc32fae9b06|"
+msgid "|872aca9275584c5aab0d117410ea0641|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:340
@@ -42403,5 +42405,47 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "|09519054c2274a1194bc2c6154294192|"
+#~ msgstr ""
+
+#~ msgid "|691cc2446f8d4904b5eefbb2e422a00d|"
+#~ msgstr ""
+
+#~ msgid "|959ace9236d44a84b0352fa7abce0ae5|"
+#~ msgstr ""
+
+#~ msgid "|d08d86434b0a40d0ab9e970c9d3f26a3|"
+#~ msgstr ""
+
+#~ msgid "|c903d4610434415c893c2896cc44d1be|"
+#~ msgstr ""
+
+#~ msgid "|a8a127b5e77e40058d92534a98a1ac67|"
+#~ msgstr ""
+
+#~ msgid "|d94816ae0bb948a08d9c70fc40cdfe45|"
+#~ msgstr ""
+
+#~ msgid "|0df9b0b7bd7f49428a0f16986577e640|"
+#~ msgstr ""
+
+#~ msgid "|3ca2aec703e04914846468bdebbaa579|"
+#~ msgstr ""
+
+#~ msgid "|62c7197c979a425eae442a833817ad90|"
+#~ msgstr ""
+
+#~ msgid "|cec1ac1022eb49b6b4999a6fc0dc1692|"
+#~ msgstr ""
+
+#~ msgid "|ff4ad9f1c9d0454f82cd45e2237ec41f|"
+#~ msgstr ""
+
+#~ msgid "|263fa38c588a42b6b9b5bb6f1ab7e572|"
+#~ msgstr ""
+
+#~ msgid "|832fe0df0b4c44f9b7d1e170a8071363|"
+#~ msgstr ""
+
+#~ msgid "|db0ef1f7489c450e96abcfc32fae9b06|"
 #~ msgstr ""
 
