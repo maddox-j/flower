@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flower main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 00:07+0000\n"
+"POT-Creation-Date: 2025-09-09 01:28+0000\n"
 "PO-Revision-Date: 2024-05-25 11:09+0000\n"
 "Last-Translator: Gustavo Bertoli <gubertoli@gmail.com>\n"
 "Language: pt_BR\n"
@@ -10003,7 +10003,8 @@ msgstr ""
 #: flwr.common.record.recorddict.RecordDict
 #: flwr.common.record.recorddict.RecordDict.inflate
 #: flwr.compat.client.app.start_client
-#: flwr.compat.client.app.start_numpy_client flwr.server.app.start_server
+#: flwr.compat.client.app.start_numpy_client
+#: flwr.compat.server.app.start_server
 #: flwr.server.client_manager.ClientManager.register
 #: flwr.server.client_manager.ClientManager.unregister
 #: flwr.server.client_manager.SimpleClientManager.register
@@ -10066,7 +10067,7 @@ msgstr ""
 #: flwr.common.record.configrecord.ConfigRecord.inflate
 #: flwr.common.record.metricrecord.MetricRecord.inflate
 #: flwr.common.record.recorddict.RecordDict.inflate
-#: flwr.server.app.start_server
+#: flwr.compat.server.app.start_server
 #: flwr.server.client_manager.ClientManager.num_available
 #: flwr.server.client_manager.ClientManager.register
 #: flwr.server.client_manager.SimpleClientManager.num_available
@@ -10108,7 +10109,7 @@ msgstr ""
 #: flwr.common.record.configrecord.ConfigRecord.inflate
 #: flwr.common.record.metricrecord.MetricRecord.inflate
 #: flwr.common.record.recorddict.RecordDict.inflate
-#: flwr.server.app.start_server
+#: flwr.compat.server.app.start_server
 #: flwr.server.client_manager.ClientManager.num_available
 #: flwr.server.client_manager.ClientManager.register
 #: flwr.server.client_manager.SimpleClientManager.num_available
@@ -10197,8 +10198,9 @@ msgstr ""
 #: flwr.common.record.recorddict.RecordDict:14
 #: flwr.common.record.recorddict.RecordSet:12
 #: flwr.compat.client.app.start_client:51
-#: flwr.compat.client.app.start_numpy_client:36 flwr.server.app.start_server:46
-#: flwr.server.grid.grid.Driver:14 flwr.server.server_app.ServerApp:4
+#: flwr.compat.client.app.start_numpy_client:36
+#: flwr.compat.server.app.start_server:46 flwr.server.grid.grid.Driver:14
+#: flwr.server.server_app.ServerApp:4
 #: flwr.server.server_app.ServerApp.lifespan:7
 #: flwr.server.server_app.ServerApp.main:4
 #: flwr.server.strategy.dp_adaptive_clipping.DifferentialPrivacyClientSideAdaptiveClipping:29
@@ -11170,9 +11172,8 @@ msgstr ""
 
 #: ../../source/ref-api/flwr.common.rst:72:<autosummary>:1
 msgid ""
-"alias of :py:class:`~numpy.ndarray`\\ [:py:class:`tuple`\\ "
-"[:py:class:`int`, ...], :py:class:`~numpy.dtype`\\ "
-"[:py:obj:`~typing.Any`]]"
+"alias of :py:class:`~numpy.ndarray`\\ [:py:obj:`~typing.Any`, "
+":py:class:`~numpy.dtype`\\ [:py:obj:`~typing.Any`]]"
 msgstr ""
 
 #: ../../source/ref-api/flwr.common.rst:72:<autosummary>:1
@@ -11182,7 +11183,7 @@ msgstr ""
 #: ../../source/ref-api/flwr.common.rst:72:<autosummary>:1
 msgid ""
 "alias of :py:class:`list`\\ [:py:class:`~numpy.ndarray`\\ "
-"[:py:class:`tuple`\\ [:py:class:`int`, ...], :py:class:`~numpy.dtype`\\ "
+"[:py:obj:`~typing.Any`, :py:class:`~numpy.dtype`\\ "
 "[:py:obj:`~typing.Any`]]]"
 msgstr ""
 
@@ -14345,7 +14346,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/ref-api/flwr.server.rst:22:<autosummary>:1
-#: flwr.server.app.start_server:1 of
+#: flwr.compat.server.app.start_server:1 of
 msgid "Start a Flower server using the gRPC transport layer."
 msgstr ""
 
@@ -15030,7 +15031,7 @@ msgid ""
 "thereof. If no instance is provided, one will be created internally."
 msgstr ""
 
-#: flwr.server.app.start_server:14
+#: flwr.compat.server.app.start_server:14
 #: flwr.server.serverapp_components.ServerAppComponents:6 of
 msgid ""
 "Currently supported values are `num_rounds` (int, default: 1) and "
@@ -15151,37 +15152,37 @@ msgstr ""
 msgid "start\\_server"
 msgstr ""
 
-#: flwr.server.app.start_server:5 of
+#: flwr.compat.server.app.start_server:5 of
 msgid ""
 "This function is deprecated since 1.13.0. Use the :code:`flower-"
 "superlink` command instead to start a SuperLink."
 msgstr ""
 
-#: flwr.server.app.start_server:8 of
+#: flwr.compat.server.app.start_server:8 of
 msgid "The IPv4 or IPv6 address of the server. Defaults to `\"[::]:8080\"`."
 msgstr ""
 
-#: flwr.server.app.start_server:10 of
+#: flwr.compat.server.app.start_server:10 of
 msgid ""
 "A server implementation, either `flwr.server.Server` or a subclass "
 "thereof. If no instance is provided, then `start_server` will create one."
 msgstr ""
 
-#: flwr.server.app.start_server:17 of
+#: flwr.compat.server.app.start_server:17 of
 msgid ""
 "An implementation of the abstract base class "
 "`flwr.server.strategy.Strategy`. If no strategy is provided, then "
 "`start_server` will use `flwr.server.strategy.FedAvg`."
 msgstr ""
 
-#: flwr.server.app.start_server:21 of
+#: flwr.compat.server.app.start_server:21 of
 msgid ""
 "An implementation of the abstract base class `flwr.server.ClientManager`."
 " If no implementation is provided, then `start_server` will use "
 "`flwr.server.client_manager.SimpleClientManager`."
 msgstr ""
 
-#: flwr.server.app.start_server:26 of
+#: flwr.compat.server.app.start_server:26 of
 msgid ""
 "The maximum length of gRPC messages that can be exchanged with the Flower"
 " clients. The default should be sufficient for most models. Users who "
@@ -15191,7 +15192,7 @@ msgid ""
 "increased limit and block larger messages."
 msgstr ""
 
-#: flwr.server.app.start_server:33 of
+#: flwr.compat.server.app.start_server:33 of
 msgid ""
 "Tuple containing root certificate, server certificate, and private key to"
 " start a secure SSL-enabled server. The tuple is expected to have three "
@@ -15199,34 +15200,34 @@ msgid ""
 "server certificate.     * server private key."
 msgstr ""
 
-#: flwr.server.app.start_server:33 of
+#: flwr.compat.server.app.start_server:33 of
 msgid ""
 "Tuple containing root certificate, server certificate, and private key to"
 " start a secure SSL-enabled server. The tuple is expected to have three "
 "bytes elements in the following order:"
 msgstr ""
 
-#: flwr.server.app.start_server:37 of
+#: flwr.compat.server.app.start_server:37 of
 msgid "CA certificate."
 msgstr ""
 
-#: flwr.server.app.start_server:38 of
+#: flwr.compat.server.app.start_server:38 of
 msgid "server certificate."
 msgstr ""
 
-#: flwr.server.app.start_server:39 of
+#: flwr.compat.server.app.start_server:39 of
 msgid "server private key."
 msgstr ""
 
-#: flwr.server.app.start_server:42 of
+#: flwr.compat.server.app.start_server:42 of
 msgid "**hist** -- Object containing training and evaluation metrics."
 msgstr ""
 
-#: flwr.server.app.start_server:47 of
+#: flwr.compat.server.app.start_server:47 of
 msgid "Starting an insecure server::"
 msgstr ""
 
-#: flwr.server.app.start_server:51 of
+#: flwr.compat.server.app.start_server:51 of
 msgid "Starting a TLS-enabled server::"
 msgstr ""
 
@@ -29637,7 +29638,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:41
-msgid "|691cc2446f8d4904b5eefbb2e422a00d|"
+msgid "|5fe3bdacf7a847049aa2deb1b2719167|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:109
@@ -29652,7 +29653,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:53
-msgid "|959ace9236d44a84b0352fa7abce0ae5|"
+msgid "|ba684509b15749a7b2b6bdc39960b2a5|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:111
@@ -29674,7 +29675,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:67
-msgid "|d08d86434b0a40d0ab9e970c9d3f26a3|"
+msgid "|e3019fc4ea1e4f94b27de6d82af1f09c|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:113
@@ -29690,7 +29691,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:79
-msgid "|c903d4610434415c893c2896cc44d1be|"
+msgid "|0a0d38ece08b40718b3acec07545fd4b|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:115
@@ -29706,7 +29707,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:91
-msgid "|a8a127b5e77e40058d92534a98a1ac67|"
+msgid "|51076d38f1ca4793af60b1dcc82d7ff7|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:117
@@ -29721,7 +29722,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:103
-msgid "|d94816ae0bb948a08d9c70fc40cdfe45|"
+msgid "|b029f77ca2f44aaeaae54c6ba640dbe6|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:119
@@ -29741,7 +29742,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:138
-msgid "|0df9b0b7bd7f49428a0f16986577e640|"
+msgid "|074edb87b50a4a5d84a56e83e1742432|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:173
@@ -29756,7 +29757,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:150
-msgid "|3ca2aec703e04914846468bdebbaa579|"
+msgid "|dcc8ef7735944ce5a531a5f35174e28a|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:175
@@ -29896,7 +29897,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:210
-msgid "|62c7197c979a425eae442a833817ad90|"
+msgid "|93ddcfed589d465484495bb44c7c9457|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:307
@@ -29920,7 +29921,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:225
-msgid "|cec1ac1022eb49b6b4999a6fc0dc1692|"
+msgid "|20b431ef4d014614abfc3f3ae3dca52e|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:309
@@ -29944,7 +29945,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:240
-msgid "|ff4ad9f1c9d0454f82cd45e2237ec41f|"
+msgid "|caabcbc27d844b85a5a84526006088d5|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:311
@@ -29967,7 +29968,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:255
-msgid "|263fa38c588a42b6b9b5bb6f1ab7e572|"
+msgid "|434eeee4da124f1ca460ec29aa30d077|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:313
@@ -30005,7 +30006,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:273
-msgid "|832fe0df0b4c44f9b7d1e170a8071363|"
+msgid "|5c9e6b838f144494b0f3e13e365d8845|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:315
@@ -30099,7 +30100,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:334
-msgid "|db0ef1f7489c450e96abcfc32fae9b06|"
+msgid "|d8a7e5495c6c44c39e30a54218cc0b5a|"
 msgstr ""
 
 #: ../../source/tutorial-series-what-is-federated-learning.ipynb:340
@@ -46642,5 +46643,60 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "|09519054c2274a1194bc2c6154294192|"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "alias of :py:class:`~numpy.ndarray`\\ "
+#~ "[:py:class:`tuple`\\ [:py:class:`int`, ...], "
+#~ ":py:class:`~numpy.dtype`\\ [:py:obj:`~typing.Any`]]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "alias of :py:class:`list`\\ "
+#~ "[:py:class:`~numpy.ndarray`\\ [:py:class:`tuple`\\ "
+#~ "[:py:class:`int`, ...], :py:class:`~numpy.dtype`\\ "
+#~ "[:py:obj:`~typing.Any`]]]"
+#~ msgstr ""
+
+#~ msgid "|691cc2446f8d4904b5eefbb2e422a00d|"
+#~ msgstr ""
+
+#~ msgid "|959ace9236d44a84b0352fa7abce0ae5|"
+#~ msgstr ""
+
+#~ msgid "|d08d86434b0a40d0ab9e970c9d3f26a3|"
+#~ msgstr ""
+
+#~ msgid "|c903d4610434415c893c2896cc44d1be|"
+#~ msgstr ""
+
+#~ msgid "|a8a127b5e77e40058d92534a98a1ac67|"
+#~ msgstr ""
+
+#~ msgid "|d94816ae0bb948a08d9c70fc40cdfe45|"
+#~ msgstr ""
+
+#~ msgid "|0df9b0b7bd7f49428a0f16986577e640|"
+#~ msgstr ""
+
+#~ msgid "|3ca2aec703e04914846468bdebbaa579|"
+#~ msgstr ""
+
+#~ msgid "|62c7197c979a425eae442a833817ad90|"
+#~ msgstr ""
+
+#~ msgid "|cec1ac1022eb49b6b4999a6fc0dc1692|"
+#~ msgstr ""
+
+#~ msgid "|ff4ad9f1c9d0454f82cd45e2237ec41f|"
+#~ msgstr ""
+
+#~ msgid "|263fa38c588a42b6b9b5bb6f1ab7e572|"
+#~ msgstr ""
+
+#~ msgid "|832fe0df0b4c44f9b7d1e170a8071363|"
+#~ msgstr ""
+
+#~ msgid "|db0ef1f7489c450e96abcfc32fae9b06|"
 #~ msgstr ""
 
